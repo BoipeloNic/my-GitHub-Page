@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Boi's Beauty Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --pink: #e91e8c; --blush: #fce4ec; --soft: #fff5f9; }
+    body { font-family: 'Jost', sans-serif; background: white; color: #222; }
+    .beauty-nav { background: white; border-bottom: 1px solid #f8e1ec; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+    .beauty-nav .navbar-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--pink) !important; font-style: italic; }
+    .beauty-nav .nav-link { color: #333 !important; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; margin: 0 8px; font-weight: 500; }
+    .beauty-nav .nav-link:hover { color: var(--pink) !important; }
+    .btn-book { background-color: var(--pink); color: white !important; border-radius: 0; padding: 8px 24px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border: none; text-decoration: none; display: inline-block; }
+    .btn-book:hover { background-color: #c4177a; color: white !important; }
+    .page-hero { background: linear-gradient(135deg, #fff5f9 0%, #fce4ec 100%); padding: 80px 0; }
+    .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; color: #1a1a1a; }
+    .page-hero h1 em { color: var(--pink); font-style: italic; }
+    .section-label { font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: var(--pink); font-weight: 500; }
+    .divider { width: 60px; height: 2px; background: var(--pink); margin: 15px auto; }
+    .contact-card { background: var(--soft); padding: 30px; text-align: center; border-bottom: 3px solid transparent; transition: all 0.3s; height: 100%; }
+    .contact-card:hover { border-bottom-color: var(--pink); }
+    .contact-icon { font-size: 2rem; margin-bottom: 12px; }
+    .contact-card h6 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #1a1a1a; margin-bottom: 8px; }
+    .contact-card p { font-size: 0.88rem; color: #777; margin: 0; }
+    .contact-card a { color: var(--pink); text-decoration: none; font-weight: 500; }
+    .btn-whatsapp { background: #25D366; color: white; border: none; padding: 14px 40px; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; border-radius: 0; text-decoration: none; display: inline-block; transition: background 0.3s; }
+    .btn-whatsapp:hover { background: #1da851; color: white; }
+    .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border: none; padding: 14px 40px; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; border-radius: 0; text-decoration: none; display: inline-block; }
+    .hours-table { width: 100%; }
+    .hours-table td { padding: 8px 0; font-size: 0.9rem; color: #555; border-bottom: 1px solid #f8e1ec; }
+    .hours-table td:last-child { text-align: right; color: var(--pink); font-weight: 500; }
+    .beauty-footer { background: #1a1a1a; color: #aaa; padding: 40px 0 20px; text-align: center; }
+    .beauty-footer .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--pink); font-style: italic; }
+    .beauty-footer a { color: #aaa; text-decoration: none; margin: 0 10px; font-size: 0.85rem; transition: color 0.3s; }
+    .beauty-footer a:hover { color: var(--pink); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg beauty-nav">
+    <div class="container">
+      <a class="navbar-brand" href="beauty.html">Boi's Beauty Bar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beautyNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="beautyNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="beauty.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-contact.html">Contact</a></li>
+        </ul>
+        <a href="beauty-booking.html" class="btn btn-book">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container text-center">
+      <p class="section-label">Get In Touch</p>
+      <h1>Contact <em>Us</em></h1>
+      <div class="divider"></div>
+      <p style="color:#777; max-width:500px; margin:0 auto; font-size:0.95rem;">We'd love to hear from you. Reach out via WhatsApp, email, or Instagram.</p>
+    </div>
+  </section>
+
+  <section class="py-5 mt-3">
+    <div class="container">
+
+      <!-- CONTACT CARDS -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-3 col-sm-6">
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h6>WhatsApp</h6>
+            <p><a href="https://wa.me/26700000000" target="_blank">Chat with us</a></p>
+            <p style="margin-top:5px; font-size:0.8rem; color:#bbb;">+267 XXX XXXXX</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h6>Email</h6>
+            <p><a href="mailto:bida25-104@bac.ac.bw">bida25-104@bac.ac.bw</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h6>Location</h6>
+            <p>Gaborone, Botswana</p>
+            <p style="margin-top:5px; font-size:0.8rem; color:#bbb;">Mobile service available</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="contact-card">
+            <div class="contact-icon">📸</div>
+            <h6>Instagram</h6>
+            <p><a href="https://instagram.com" target="_blank">@boisbeautybar</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <!-- BUTTONS -->
+        <div class="col-lg-6">
+          <h4 style="font-family:'Cormorant Garamond',serif; font-weight:300; margin-bottom:25px;">Reach Out <em style="color:var(--pink); font-style:italic;">Directly</em></h4>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="https://wa.me/26700000000" target="_blank" class="btn-whatsapp">💬 WhatsApp Us</a>
+            <a href="https://instagram.com" target="_blank" class="btn-instagram">📸 Instagram</a>
+          </div>
+          <p style="color:#aaa; font-size:0.82rem; margin-top:15px;">Update the WhatsApp link with your actual number and Instagram with your handle.</p>
+
+          <div class="mt-5">
+            <h4 style="font-family:'Cormorant Garamond',serif; font-weight:300; margin-bottom:20px;">Business <em style="color:var(--pink); font-style:italic;">Hours</em></h4>
+            <table class="hours-table">
+              <tr><td>Monday – Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM – 5:00 PM</td></tr>
+              <tr><td>Sunday</td><td>By Appointment Only</td></tr>
+              <tr><td>Public Holidays</td><td>By Appointment Only</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- BOOK CTA -->
+        <div class="col-lg-6">
+          <div style="background: linear-gradient(135deg, var(--pink) 0%, #c4177a 100%); padding: 50px 40px; text-align:center; color:white;">
+            <h3 style="font-family:'Cormorant Garamond',serif; font-weight:300; font-size:2rem;">Ready to <em style="font-style:italic;">Glow?</em></h3>
+            <p style="color:rgba(255,255,255,0.85); margin: 15px 0 25px; font-size:0.95rem;">Don't wait — book your glam session now and secure your spot.</p>
+            <a href="beauty-booking.html" style="background:white; color:var(--pink); padding:14px 35px; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; text-decoration:none; font-weight:500; display:inline-block;">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="beauty-footer">
+    <div class="container">
+      <p class="brand">Boi's Beauty Bar</p>
+      <p style="font-size:0.8rem; letter-spacing:2px; color:#888;">CERTIFIED MUA · GABORONE, BOTSWANA</p>
+      <div class="mt-3">
+        <a href="beauty.html">Home</a>
+        <a href="beauty-about.html">About</a>
+        <a href="beauty-services.html">Services</a>
+        <a href="beauty-gallery.html">Gallery</a>
+        <a href="beauty-booking.html">Book Now</a>
+        <a href="beauty-contact.html">Contact</a>
+      </div>
+      <hr style="border-color:#333; margin: 20px 0;">
+      <p style="font-size:0.8rem;">&copy; 2026 Boi's Beauty Bar · Boipelo Nicole Ditshwenyego</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

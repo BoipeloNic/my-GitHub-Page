@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Boi's Beauty Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --pink: #e91e8c; --blush: #fce4ec; --soft: #fff5f9; }
+    body { font-family: 'Jost', sans-serif; background: white; color: #222; }
+    .beauty-nav { background: white; border-bottom: 1px solid #f8e1ec; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+    .beauty-nav .navbar-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--pink) !important; font-style: italic; }
+    .beauty-nav .nav-link { color: #333 !important; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; margin: 0 8px; font-weight: 500; }
+    .beauty-nav .nav-link:hover { color: var(--pink) !important; }
+    .btn-book { background-color: var(--pink); color: white !important; border-radius: 0; padding: 8px 24px; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border: none; text-decoration: none; display: inline-block; }
+    .btn-book:hover { background-color: #c4177a; color: white !important; }
+    .page-hero { background: linear-gradient(135deg, #fff5f9 0%, #fce4ec 100%); padding: 80px 0; }
+    .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; color: #1a1a1a; }
+    .page-hero h1 em { color: var(--pink); font-style: italic; }
+    .section-label { font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: var(--pink); font-weight: 500; }
+    .divider { width: 60px; height: 2px; background: var(--pink); margin: 15px auto; }
+    .gallery-placeholder { background: var(--soft); border: 2px dashed #f0c0d8; height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #bbb; font-size: 0.85rem; text-align: center; padding: 20px; }
+    .gallery-placeholder .icon { font-size: 2.5rem; margin-bottom: 10px; }
+    .category-label { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--pink); font-style: italic; margin-bottom: 15px; }
+    .beauty-footer { background: #1a1a1a; color: #aaa; padding: 40px 0 20px; text-align: center; }
+    .beauty-footer .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--pink); font-style: italic; }
+    .beauty-footer a { color: #aaa; text-decoration: none; margin: 0 10px; font-size: 0.85rem; transition: color 0.3s; }
+    .beauty-footer a:hover { color: var(--pink); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg beauty-nav">
+    <div class="container">
+      <a class="navbar-brand" href="beauty.html">Boi's Beauty Bar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beautyNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="beautyNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="beauty.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="beauty-contact.html">Contact</a></li>
+        </ul>
+        <a href="beauty-booking.html" class="btn btn-book">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container text-center">
+      <p class="section-label">The Work</p>
+      <h1>Our <em>Gallery</em></h1>
+      <div class="divider"></div>
+      <p style="color:#777; max-width:500px; margin:0 auto; font-size:0.95rem;">Add your portfolio photos here to showcase your work. High quality images only! 📸</p>
+    </div>
+  </section>
+
+  <section class="py-5 mt-3">
+    <div class="container">
+
+      <!-- Soft Glam -->
+      <p class="category-label">💄 Soft Glam Looks</p>
+      <div class="row g-3 mb-5">
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Soft Glam photo here<br><small>Replace with: &lt;img src="your-photo.jpg"&gt;</small></p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Soft Glam photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Soft Glam photo here</p></div></div>
+      </div>
+
+      <!-- Full Glam -->
+      <p class="category-label">👑 Full Glam Looks</p>
+      <div class="row g-3 mb-5">
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Full Glam photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Full Glam photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Full Glam photo here</p></div></div>
+      </div>
+
+      <!-- Bridal -->
+      <p class="category-label">💍 Bridal</p>
+      <div class="row g-3 mb-5">
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Bridal photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Bridal photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Bridal photo here</p></div></div>
+      </div>
+
+      <!-- Graduations -->
+      <p class="category-label">🎓 Graduations</p>
+      <div class="row g-3 mb-5">
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Graduation photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Graduation photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add your Graduation photo here</p></div></div>
+      </div>
+
+      <!-- Transformations -->
+      <p class="category-label">✨ Client Transformations</p>
+      <div class="row g-3 mb-5">
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add Before & After photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add Before & After photo here</p></div></div>
+        <div class="col-md-4"><div class="gallery-placeholder"><div class="icon">📸</div><p>Add Before & After photo here</p></div></div>
+      </div>
+
+      <div class="text-center mt-3">
+        <p style="color:#aaa; font-size:0.85rem;">📱 Follow us on Instagram for more looks</p>
+        <a href="beauty-contact.html" class="btn btn-book px-4 py-3 mt-2">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="beauty-footer">
+    <div class="container">
+      <p class="brand">Boi's Beauty Bar</p>
+      <p style="font-size:0.8rem; letter-spacing:2px; color:#888;">CERTIFIED MUA · GABORONE, BOTSWANA</p>
+      <div class="mt-3">
+        <a href="beauty.html">Home</a>
+        <a href="beauty-about.html">About</a>
+        <a href="beauty-services.html">Services</a>
+        <a href="beauty-gallery.html">Gallery</a>
+        <a href="beauty-booking.html">Book Now</a>
+        <a href="beauty-contact.html">Contact</a>
+      </div>
+      <hr style="border-color:#333; margin: 20px 0;">
+      <p style="font-size:0.8rem;">&copy; 2026 Boi's Beauty Bar · Boipelo Nicole Ditshwenyego</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
